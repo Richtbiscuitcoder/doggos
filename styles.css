@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(rgb(177, 173, 236), rgb(120, 113, 230));
+    position: relative;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: gold;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+
+input:checked + label::before {
+    left: 23px;
+  }
+
+  .output {
+    background-color: aqua;
+  }
